@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="content-type" content="text/html" charset="UTF-8">
+    <title>top page</title>
+</head>
+<body>
+<h1>Helo page</h1>
+<p th:text="${#dates.format(new java.util.Date(), 'dd/MMM/yyyy HH:mm')}"></p>
+<p th:text="${#numbers.formatInteger(1234, 7)}"></p>
+<p th:text="${#strings.toUpperCase('Welcome to Spring.')}"></p>
+</body>
+</html>
